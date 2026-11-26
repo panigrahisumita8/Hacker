@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberDeck UNO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CYBERDECK <span>UNO</span></h1>
+  <p>PERSONAL PC CONTROL CENTER</p>
+  <div id="status">● DASHBOARD READY</div>
+</header>
+
+<main>
+
+<section class="panel">
+<h2>⚡ Terminal Animations</h2>
+<button onclick="send('RICK')">😂 Rickroll</button>
+<button onclick="send('PARROT')">🦜 Parrot</button>
+<button onclick="send('NYAN')">🌈 Nyan Cat</button>
+<button onclick="send('AQUARIUM')">🐠 Aquarium</button>
+<button onclick="send('TRAIN')">🚂 Train</button>
+<button onclick="send('TREE')">🌳 Directory Tree</button>
+</section>
+
+<section class="panel">
+<h2>🌐 Website Launcher</h2>
+<button onclick="send('GOOGLE')">Google</button>
+<button onclick="send('YOUTUBE')">YouTube</button>
+<button onclick="send('GITHUB')">GitHub</button>
+
+<input id="urlInput"
+placeholder="Enter website URL">
+
+<button onclick="openCustomURL()">OPEN WEBSITE</button>
+</section>
+
+<section class="panel">
+<h2>⌨️ Type Anything</h2>
+<textarea id="textInput"
+placeholder="Type something to display on your PC..."></textarea>
+
+<button onclick="sendCustomText()">TYPE ON PC</button>
+</section>
+
+<section class="panel">
+<h2>🖥️ PC Controls</h2>
+<button onclick="send('SHOW_DESKTOP')">Show Desktop</button>
+<button onclick="send('LOCK')">Lock PC</button>
+<button onclick="send('VOLUME_UP')">Volume +</button>
+<button onclick="send('VOLUME_DOWN')">Volume -</button>
+<button onclick="send('PLAY_PAUSE')">Play / Pause</button>
+</section>
+
+<section class="panel">
+<h2>🎮 Navigation</h2>
+<div class="center">
+<button onclick="send('UP')">▲</button>
+</div>
+<div class="center">
+<button onclick="send('LEFT')">◀</button>
+<button onclick="send('ENTER')">OK</button>
+<button onclick="send('RIGHT')">▶</button>
+</div>
+<div class="center">
+<button onclick="send('DOWN')">▼</button>
+</div>
+</section>
+
+<section class="panel">
+<h2>📡 Connection</h2>
+<p id="connection">Waiting for PC bridge...</p>
+<button onclick="checkConnection()">CHECK CONNECTION</button>
+</section>
+
+</main>
+
+<footer>
+CYBERDECK UNO | VERSION 2.0
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
