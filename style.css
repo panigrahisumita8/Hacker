@@ -1,0 +1,26 @@
+
+textarea, input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 9px;
+  border: 1px solid #355575;
+  background: #091321;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.panel button {
+  margin: 5px 3px;
+}
+
+#connection {
+  color: #42d9ff;
+  font-size: 13px;
+}
